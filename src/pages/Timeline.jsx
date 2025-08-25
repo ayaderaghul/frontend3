@@ -10,7 +10,7 @@ export default function HomeTimeline() {
     queryKey: ["homeTimeline"],
     queryFn: fetchHomeTimeline,
   });
-
+  console.log('hello from timeline')
   if (isLoading) return <p>Loading timeline...</p>;
   if (isError) return <p>Failed to load timeline.</p>;
 
